@@ -100,14 +100,47 @@ main {
     font-weight: 600;
 }
 
-.card-content {
-    margin-bottom: 24px;;
-}
-
 .three-columns {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     gap: 16px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    font-family: inherit;
+    padding: 8px 6px;
+    display: block;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 8px 6px;
+    font-family: inherit;
+}
+
+.form-row {
+    margin-bottom: 16px;
+}
+
+.btn {
+    color: var(--color--purple);
+    padding: 8px 16px;
+    border: none;
+    background-color: var(--color--pink);
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color--pink-s);
+    color: white;
 }
 
 /* || Footer */
