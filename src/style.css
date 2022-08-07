@@ -104,6 +104,12 @@ main {
     margin-bottom: 24px;;
 }
 
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 16px;
+}
+
 /* || Footer */
 footer {
     display: grid;
