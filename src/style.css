@@ -1,6 +1,6 @@
 /* || General styles */
 :root {
-    --color-white: rgb(227, 227, 227);
+    --color-white: rgb(227 227 227 / 0.95);
     --color--purple: rgb(91 55 88);
     --color--pink: rgb(249 173 160);
     --color--pink-s: rgb(249 98 125);
@@ -28,7 +28,7 @@
     font-family: "Mulish";
     height: 100vh;
     display: grid;
-    grid-template-rows: min-content 1fr 100px;
+    grid-template-rows: min-content 1fr min-content;
     background: url("./falafel.jpg");
     background-position: center;
     background-size: cover;
@@ -99,5 +99,16 @@ main {
 }
 
 .card-content {
-    margin-bottom: 24px;
+    margin-bottom: 24px;;
+}
+
+/* || Footer */
+footer {
+    display: grid;
+    /* justify-items: end; */
+    color: var(--color-white);
+}
+
+footer a {
+    color: var(--color--pink-s);
 }

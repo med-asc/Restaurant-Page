@@ -66,6 +66,7 @@ function loadFooter() {
     const footer = document.createElement('footer');
 
     const cred = document.createElement('div');
+    cred.classList.add('container');
     const span1 = document.createElement('span');
     span1.textContent = 'Photo by ';
 
