@@ -1,3 +1,9 @@
+import initialPageLoad from './home';
+import { loadHeader, loadMain, loadFooter } from './home';
 import './style.css';
 
-console.log('Hello World!');
+const main = document.querySelector('#content');
+
+main.appendChild(loadHeader());
+main.appendChild(loadMain());
+main.appendChild(loadFooter());
