@@ -79,3 +79,25 @@ nav a:hover {
     background-color: var(--color--pink);
     color: var(--color--purple);
 }
+
+
+/* || Main */
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--color-white);
+    max-width: 600px;
+    padding: 24px;
+}
+
+.card-heading {
+    margin-bottom: 18px;
+}
+
+.card-content {
+    margin-bottom: 24px;
+}

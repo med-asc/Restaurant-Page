@@ -38,10 +38,34 @@ function loadHeader() {
 
 function loadMain() {
     const main = document.createElement('main');
-    const par = document.createElement('p');
-    par.textContent = 'LoL';
+    const card = document.createElement('div');
+    card.classList.add('card');
+    const hdiv = document.createElement('div');
+    hdiv.classList.add('card-heading');
+    const heading = document.createElement('h2');
+    heading.textContent = 'Welcome to TMF';
+    const bdiv = document.createElement('div');
+    bdiv.classList.add('card-content');
+    const lorem = document.createElement('p');
+    lorem.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui corporis at, excepturi cum unde aliquid ipsa ea amet quia natus reprehenderit iusto! Accusantium optio eligendi voluptate? Illo, quo nostrum.';
+    const links = document.createElement('div');
+    links.classList.add('card-content');
+    links.textContent = 'See our Menu or Contact us if you have any questions.';
 
+    hdiv.appendChild(heading);
+    card.appendChild(hdiv);
+    bdiv.appendChild(lorem);
+    card.appendChild(bdiv);
+    card.appendChild(links);
+    main.appendChild(card);
 
+    return main
+}
+
+function loadFooter() {
+    const footer = document.createElement('footer');
+
+    const cred = document.createElement('div');
     const span1 = document.createElement('span');
     span1.textContent = 'Photo by ';
 
@@ -58,17 +82,11 @@ function loadMain() {
     unsplash.setAttribute('href', 'https://unsplash.com/s/photos/falafel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
     unsplash.setAttribute('target', '_blank');
 
-    main.appendChild(span1);
-    main.appendChild(photo);
-    main.appendChild(span2);
-    main.appendChild(unsplash);
-    main.appendChild(par);
-    // Photo by <a href="https://unsplash.com/es/@loudmotion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ludovic Avice</a> on <a href="https://unsplash.com/s/photos/falafel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    return main
-}
-
-function loadFooter() {
-    const footer = document.createElement('footer');
+    cred.appendChild(span1);
+    cred.appendChild(photo);
+    cred.appendChild(span2);
+    cred.appendChild(unsplash);
+    footer.appendChild(cred);
     return footer
 }
 
